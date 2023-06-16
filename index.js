@@ -1,17 +1,18 @@
 // Code your solution in this file!
-const hq = 42
-let blocks = 50
-
 function distanceFromHqInBlocks(blocks) {
+    const hq = 42
     const distance=Math.abs(blocks - hq)
 
      return distance
   }
+  distanceFromHqInBlocks()
+
   function distanceFromHqInFeet(blocks) {
     const blockLengthInFeet = 264
 
     return distanceFromHqInBlocks(blocks) * blockLengthInFeet
   }
+  distanceFromHqInFeet()
 
   function distanceTravelledInFeet(start, destination) {
     const blockLengthInFeet = 264
@@ -21,6 +22,7 @@ function distanceFromHqInBlocks(blocks) {
 
     return distanceInFeet
   }
+  distanceTravelledInFeet()
 
   function calculatesFarePrice(start, destination) {
     const distanceInFeet = distanceTravelledInFeet(start, destination)
@@ -36,3 +38,4 @@ function distanceFromHqInBlocks(blocks) {
       return farePrice = 'cannot travel that far'
     }
   }
+  calculatesFarePrice()
